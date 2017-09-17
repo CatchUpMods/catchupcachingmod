@@ -7,7 +7,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'repository' => [
-        'enabled' => env('CACHE_REPOSITORY', false),
+        'enabled' => env('CACHE_REPOSITORY_ENABLED', false),
         /*
         |--------------------------------------------------------------------------
         | Default Cache Store
@@ -20,7 +20,7 @@ return [
         | Supported: "apc", "array", "database", "file", "memcached", "redis"
         |
         */
-        'default' => env('CACHE_DRIVER', 'file'),
+        'default' => env('CACHE_REPOSITORY_DRIVER', 'file'),
 
         /*
         |--------------------------------------------------------------------------
